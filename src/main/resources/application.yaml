@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path:
+
+spring:
+  application:
+    name: db2
+
+  data:
+    cassandra:
+      contact-points: localhost
+      local-datacenter: datacenter1
+      keyspace-name: test1
+      username: cassandra
+      password: cassandra
+      schema-action: none
+      port: 9042
+
+  jackson:
+    serialization:
+      indent_output: true
+
